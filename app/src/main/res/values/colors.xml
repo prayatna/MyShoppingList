@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#424242</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#81C784</color>
+    <color name="success">#66BB6A</color>
+    <color name="info">#5bc0de</color>
+    <color name="warn">#f0ad4e</color>
+    <color name="danger">#d9534f</color>
+    <color name="primary">#0275d8</color>
+    <color name="secondary">#CCCCCC</color>
+</resources>

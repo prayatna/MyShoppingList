@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.prayatna.u3118159.myshoppinglist.MainActivity"
+    tools:showIn="@layout/activity_main"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageViewWall"
+        android:src="@drawable/w1"
+        android:scaleType="centerCrop"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My Shopping"
+        android:id="@+id/textTitle1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:textSize="55dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="List"
+        android:id="@+id/textTitle2"
+        android:layout_below="@+id/textTitle1"
+        android:layout_centerHorizontal="true"
+        android:textSize="55dp"
+        android:textColor="@android:color/black" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Item"
+        android:id="@+id/buttonAddItem1"
+        android:onClick="openAddItem"
+        android:background="@android:color/white"
+        android:alpha="0.8"
+        android:focusableInTouchMode="true"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:layout_above="@+id/buttonMyItem"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Items"
+        android:id="@+id/buttonMyItem"
+        android:onClick="openShoppingItem"
+        android:background="@android:color/white"
+        android:alpha="0.8"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="3dp"
+        android:layout_above="@+id/buttonAbout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:id="@+id/buttonAbout"
+        android:onClick="openAbout"
+        android:background="@android:color/white"
+        android:alpha="0.8"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
